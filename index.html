@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AroHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="age-verification" class="overlay">
+    <div class="modal fade-in">
+        <img src="img/AroHub.png" alt="AroHub" class="logo-verification">
+        <h2>КОНТЕНТ 18+</h2>
+        <div class="modal-buttons">
+            <button id="btn-accept" class="btn-primary">МНЕ ЕСТЬ 18</button>
+            <button id="btn-decline" class="btn-secondary">ВЫХОД</button>
+        </div>
+    </div>
+</div>
+
+<header>
+    <div class="header-main">
+        <div class="mobile-search-btn" id="mobile-search-open">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        </div>
+
+        <div class="logo-container">
+            <img src="img/AroHub.png" alt="AroHub" class="main-logo clickable">
+        </div>
+
+        <div class="header-right" id="user-nav">
+            <div class="search-desktop">
+                <input type="text" placeholder="Поиск...">
+                <button id="d-search-btn">Найти</button>
+            </div>
+            <button class="btn-login" id="login-trigger">Вход</button>
+        </div>
+    </div>
+
+    <div class="search-overlay-mobile" id="search-bar-mobile">
+        <input type="text" placeholder="Поиск видео...">
+        <button id="mobile-search-close">&times;</button>
+    </div>
+</header>
+
+<main class="wrapper">
+    <section class="stars-container fade-in">
+        <h2 class="section-title">Топ Звезд</h2>
+        <div class="stars-scroll">
+            <div class="star-card"><img src="img/star1.png" alt=""><p>Eva</p></div>
+            <div class="star-card"><img src="img/star2.png" alt=""><p>Mia</p></div>
+            <div class="star-card"><img src="img/star3.png" alt=""><p>Lana</p></div>
+            <div class="star-card"><img src="img/star4.png" alt=""><p>Riley</p></div>
+        </div>
+    </section>
+
+    <section class="video-grid fade-in" id="main-video-grid">
+        <div class="video-card"><div class="video-thumb"></div><div class="v-info"><h4>Hot Video #1</h4><span>1.2M views</span></div></div>
+        <div class="video-card"><div class="video-thumb"></div><div class="v-info"><h4>New Release</h4><span>850K views</span></div></div>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
