@@ -1,0 +1,69 @@
+body {
+    margin: 0; background: #000; color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex; justify-content: center; align-items: center; height: 100vh;
+}
+
+.fade-in { animation: fadeIn 0.5s ease-out; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+.auth-box {
+    background: #0a0a0a; padding: 40px; border-radius: 12px;
+    border: 1px solid #1a1a1a; text-align: center; width: 350px;
+}
+
+.auth-logo { width: 180px; margin-bottom: 30px; }
+
+input {
+    width: 100%; padding: 14px; margin-bottom: 15px;
+    background: #111; border: 1px solid #222; color: #fff;
+    border-radius: 6px; box-sizing: border-box; outline: none;
+}
+
+input:focus { border-color: #ff9900; }
+
+.h-input { display: none; }
+.h-input.active { display: block; }
+
+.btn-submit {
+    width: 100%; padding: 14px; background: #ff9900;
+    border: none; font-weight: bold; cursor: pointer; border-radius: 6px;
+}
+
+.auth-footer { margin-top: 20px; font-size: 14px; color: #666; }
+
+#toggle-auth {
+    background: none; border: 1px solid #ff9900; color: #ff9900;
+    padding: 5px 15px; border-radius: 4px; cursor: pointer; margin-left: 10px;
+}
+
+.btn-secondary { background: none; border: none; color: #444; cursor: pointer; margin-top: 15px; }
+
+.video-thumb {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-overlay {
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.5);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.video-card:hover .play-overlay {
+    opacity: 1;
+}
+
+iframe {
+    border-radius: 6px;
+}
