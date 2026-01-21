@@ -1,1 +1,1 @@
-[# AroHub](https://gev722.github.io/AroHub/)
+https://gev722.github.io/AroHub/
