@@ -39,9 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const card = document.createElement('div');
         card.className = 'video-card fade-in';
         card.innerHTML = `
-            <div class="video-thumb" style="background-image: url('${vid.thumb}')">
-                <div class="play-button"></div>
-            </div>
+            <div class="video-thumb" style="background-image: url('${vid.thumb}')"></div>
             <div class="v-info">
                 <h4>${vid.title}</h4>
                 <span>Смотреть на AroHub</span>
@@ -54,4 +52,17 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         videoGrid.prepend(card);
     });
+
+    const araikCard = document.getElementById('local-araik-card');
+    if (araikCard) {
+        araikCard.onclick = function() {
+            const thumb = this.querySelector('.video-thumb');
+            thumb.innerHTML = `
+                <video controls autoplay class="custom-video-player">
+                    <source src="video/Araik.mp4" type="video/mp4">
+                </video>
+            `;
+            this.onclick = null;
+        };
+    }
 });
